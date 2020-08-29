@@ -11,7 +11,7 @@ import re
 import pickle
 
 
-# Step 3: Define a Person class with fields last, first, mi, id, and phone
+# Define a Person class with fields last, first, mi, id, and phone
 class Person:
     def __init__(self, last, first, mi, id, phone):
         self.last = last
@@ -20,17 +20,17 @@ class Person:
         self.id = id
         self.phone = phone
 
-    # Step 3: Create a display() method to output fields as shown in the sample run
+    # Create a display() method to output fields as shown in the sample run
     def display(self):
         print('Employee id: ', self.id)
         print('\t', self.first, ' ', self.mi, ' ', self.last)
         print('\t', self.phone, '\n')
 
 
-# Step 4: Create a function to process the input file.
+# Create a function to process the input file.
 def process_lines(persons):
-    # Step 2: The user needs to specify the relative path ‘data/data.csv’ in a sysarg.
-    #         If the user does not specify a sysarg, print an error message and end the program
+    # The user needs to specify the relative path ‘data/data.csv’ in a sysarg.
+    # If the user does not specify a sysarg, print an error message and end the program
     if len(sys.argv) < 2:
         print('Please enter a filename as a system arg')
         quit()
